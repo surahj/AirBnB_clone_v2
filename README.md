@@ -250,5 +250,5 @@ $ python3 unittest -m tests/test_console.py
 
 ## Authors :black_nib:
 * **Opeyemi Odebode** <[Surahj](https://github.com/surahj)>
-* **Idris Zakariyau** <[Ade3146](https://github.com/Ade3164)>
+* **Idris Zakariyau** <[Ade3164](https://github.com/Ade3164)>
 
