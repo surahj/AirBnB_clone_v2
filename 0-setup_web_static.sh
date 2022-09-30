@@ -11,13 +11,13 @@ sudo mkdir -p /data/web_static/releases/test/
 sudo mkdir -p /data/web_static/shared/
 # Create a fake HTML file
 sudo touch /data/web_static/releases/test/index.html
-sudo echo "<html>
+echo "<html>
   <head>
   </head>
   <body>
-    <h1> Holberton School <h1>
+     Holberton School
   </body>
-</html>" > /data/web_static/releases/test/index.html
+</html>" | sudo tee /data/web_static/releases/test/index.html
 # Create a symbolic link /data/web_static/current linked to the /data/web_static/releases/test/ folder
 sudo ln -sf /data/web_static/releases/test/ /data/web_static/current
 # Give ownership of the /data/ folder to the ubuntu user AND group 
