@@ -13,14 +13,12 @@ echo "<html>
   <head>
   </head>
   <body>
-     Holberton School
+    <h1> Holberton School <h1>
   </body>
 </html>" | sudo tee /data/web_static/releases/test/index.html
 sudo ln -sf /data/web_static/releases/test/ /data/web_static/current
 sudo chown -R ubuntu:ubuntu /data
 sudo chmod -R 755 /data/
-
 sudo sed -i '19 i\\n    location /hbnb_static/ {\n        alias /data/web_static/current/;\n    }\n' /etc/nginx/sites-available/default
-
 sudo service nginx restart
 
