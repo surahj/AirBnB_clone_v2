@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# -*- coding: utf-8 -*-
+# Fabfile to distribute an archive to a web server.
 
 from fabric.api import local, put, run, env
 from datetime import datetime
